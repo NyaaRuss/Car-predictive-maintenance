@@ -1,8 +1,10 @@
 Django==4.2.7
 djangorestframework==3.14.0
-tensorflow==2.20.0  # <--- Change made here
-pandas==2.1.3
-numpy==1.24.3
+tensorflow==2.20.0
+# Fix 1: Update NumPy to satisfy TensorFlow 2.20.0 dependency
+numpy==1.26.4
+# Fix 2: Update Pandas to a version that supports Python 3.13
+pandas==2.2.2 
 scikit-learn==1.3.2
 joblib==1.3.2
 matplotlib==3.8.2
